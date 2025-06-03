@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast Actives | BodyTalk Secrets</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #fff; color: #333; padding: 20px; }
+    header { text-align: center; margin-bottom: 20px; }
+    header img { height: 80px; }
+    h1 { font-size: 28px; margin: 10px 0; color: #8B2CF5; }
+    h2 { font-size: 22px; color: #EA4C89; margin-top: 20px; }
+    p { font-size: 16px; margin: 10px 0; }
+    .product-img { max-width: 300px; display: block; margin: 20px auto; }
+    .cta-section { background: #fceff9; padding: 20px; border-radius: 10px; margin-top: 20px; text-align: center; }
+    .cta-section h2 { font-size: 20px; color: #333; }
+    .cta-button { background: #FF69B4; color: #fff; border: none; padding: 15px 25px; font-size: 18px; border-radius: 8px; text-decoration: none; display: inline-block; margin-top: 10px; }
+    .timer { font-weight: bold; color: red; font-size: 18px; margin-top: 10px; }
+    footer { text-align: center; font-size: 14px; color: #999; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="BodyTalk Secrets Logo">
+    <h1>Enhance Your Natural Beauty with Breast Actives</h1>
+    <p>Trusted Formula | Clinically Backed | 60-Day Money Back Guarantee</p>
+  </header>  <img class="product-img" src="product.jpg" alt="Breast Actives Product">  <section class="cta-section">
+    <h2>Claim Your Risk-Free Bottle Now!</h2>
+    <a class="cta-button" href="https://health-beauty-healthbuy.myshopify.com/products/breast-actives?bg_ref=n4u7sUw3iR">Get Your Free Bottle</a>
+    <div class="timer" id="countdown">Offer expires in 05:00</div>
+  </section>  <section>
+    <h2>Why Choose Breast Actives?</h2>
+    <p>✔ Natural Ingredients that help enhance bust size & firmness</p>
+    <p>✔ Dual-action formula – Cream & Supplement</p>
+    <p>✔ Over 1 million women satisfied worldwide</p>
+    <p>✔ Discreet shipping & 60-Day Money Back Guarantee</p>
+  </section>  <footer>
+    © 2025 BodyTalk Secrets. Results may vary. For informational purposes only.
+  </footer>  <script>
+    // Countdown timer script
+    let time = 300;
+    const countdown = document.getElementById("countdown");
+    const timer = setInterval(() => {
+      let minutes = Math.floor(time / 60);
+      let seconds = time % 60;
+      countdown.textContent = Offer expires in ${minutes}:${seconds < 10 ? '0' : ''}${seconds};
+      if (time <= 0) {
+        clearInterval(timer);
+        countdown.textContent = "Offer expired!";
+      }
+      time--;
+    }, 1000);
+  </script></body>
+</html>
